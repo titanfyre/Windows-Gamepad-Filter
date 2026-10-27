@@ -1,0 +1,12 @@
+{
+  "Name": "Windows-Gamepad-Filter",
+  "DisplayName": "Windows Gamepad Filter",
+  "Service": "WindowsGamepadFilter",
+  "DriverFile": "WindowsGamepadFilter.sys",
+  "Version": "0.1.0.0",
+  "InputMask": 0,
+  "ControllerMask": 15,
+  "Packages": [
+    "WindowsGamepadFilterControl.inf"
+  ]
+}
