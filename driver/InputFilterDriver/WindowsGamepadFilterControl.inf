@@ -1,0 +1,48 @@
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%Provider%
+CatalogFile=WindowsGamepadFilterControl.cat
+DriverVer=10/24/2026,0.1.0.0
+PnpLockdown=1
+[Manufacturer]
+%Provider%=Models,NTamd64.10.0...16299
+[Models.NTamd64.10.0...16299]
+%Name%=Control,ROOT\WindowsGamepadFilterControl
+[Control.NT]
+CopyFiles=Files
+[Control.NT.Services]
+AddService=WindowsGamepadFilter,2,Service
+AddService=WindowsGamepadFilterDemoClock,0,TrialClockService
+[Service]
+DisplayName=%ServiceName%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%13%\WindowsGamepadFilter.sys
+[Control.NT.Wdf]
+KmdfService=WindowsGamepadFilter,Wdf
+[Wdf]
+KmdfLibraryVersion=1.15
+[DestinationDirs]
+Files=13
+[Files]
+DemoSessionClock.sys
+WindowsGamepadFilter.sys
+[SourceDisksNames]
+1=%Provider%,,,
+[SourceDisksFiles]
+DemoSessionClock.sys=1
+WindowsGamepadFilter.sys=1
+[Strings]
+Provider="Gamepad Filter Project"
+Name="WindowsGamepadFilter Control Endpoint"
+ServiceName="WindowsGamepadFilter"
+
+[TrialClockService]
+DisplayName="TitanCSA per-boot demo clock"
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%13%\DemoSessionClock.sys
