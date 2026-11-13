@@ -111,24 +111,24 @@ compatibility with every device, game or other installed driver.
 
 Les sources, licences, guides API et exemples sont regroupes dans [le depot SDK dedie](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Windows-Gamepad-Filter). Choisis le paquet a installer puis execute sa commande dans son dossier.
 
-| Paquet | Registre | Disponibilite | Installation / utilisation |
-| --- | --- | --- | --- |
-| `windows-gamepad-filter` | vcpkg | Registre TitanCSA disponible (configuration ci-dessous) | `vcpkg install windows-gamepad-filter:x64-windows` |
-| `windows-gamepad-filter` | Conan | Registre TitanCSA disponible (configuration ci-dessous) | `conan install --requires=windows-gamepad-filter/0.1.0 -r titancsa --build=missing -s compiler.cppstd=17` |
-| `Windows-Gamepad-Filter.Native` | NuGet | Publie et verifie | `Install-Package Windows-Gamepad-Filter.Native -Version 0.1.0` |
-| `WindowsGamepadFilter.SDK` | NuGet | Publie et verifie | `dotnet add package WindowsGamepadFilter.SDK --version 1.0.0` |
-| `windows_gamepad_filter` | PyPI | Pas encore disponible / validation en cours | Commande prevue apres publication : `python -m pip install windows-gamepad-filter==1.0.0` |
-| `windows-gamepad-filter` | Conda | Canal TitanCSA disponible ; acceptation conda-forge encore en attente | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge windows-gamepad-filter` |
-| `windows_gamepad_filter` | crates.io | Publie et verifie | `cargo add windows-gamepad-filter@1.0.0` |
-| `windows_gamepad_filter` | npm | Pas encore disponible / validation en cours | Commande prevue apres publication : `npm install windows-gamepad-filter@1.0.0` |
-| `io.github.titancsa:windows-gamepad-filter` | Maven Central | Publie et verifie | `io.github.titancsa:windows-gamepad-filter:1.0.0 (pom.xml / Gradle)` |
-| `com.github.titanfyre:Windows-Gamepad-Filter` | JitPack | Publie et verifie | `com.github.titanfyre:Windows-Gamepad-Filter:java-sdk-v1.0.0 (avec le depot JitPack)` |
-| `github.com/titanfyre/Windows-Gamepad-Filter/Windows-Gamepad-Filter-Go-modules` | Go Modules | Publie et verifie | `go get github.com/titanfyre/Windows-Gamepad-Filter/Windows-Gamepad-Filter-Go-modules@v1.0.0` |
-| `github.com/titanfyre/Windows-Gamepad-Filter/Windows-Gamepad-Filter-Go-modules` | pkg.go.dev | Publie et verifie | `Documentation : https://pkg.go.dev/github.com/titanfyre/Windows-Gamepad-Filter/Windows-Gamepad-Filter-Go-modules@v1.0.0` |
-| `windows_gamepad_filter` | PowerShell Gallery | Publie et verifie | `Install-Module WindowsGamepadFilter -RequiredVersion 1.0.0 -Scope CurrentUser` |
-| `windows_gamepad_filter` | pub.dev | Publie et verifie | `dart pub add windows_gamepad_filter:1.0.0` |
-| `windows_gamepad_filter` | RubyGems | Publie et verifie | `gem install windows-gamepad-filter -v 1.0.0` |
-| `windows_gamepad_filter` | Packagist | Pas encore disponible / validation en cours | Commande prevue apres publication : `composer require titancsa/windows-gamepad-filter:1.0.0` |
+| Registre | Paquet | Installation / utilisation |
+| --- | --- | --- |
+| vcpkg | `windows-gamepad-filter` | `vcpkg install windows-gamepad-filter:x64-windows` |
+| Conan | `windows-gamepad-filter` | `conan install --requires=windows-gamepad-filter/0.1.0 -r titancsa --build=missing -s compiler.cppstd=17` |
+| NuGet | `Windows-Gamepad-Filter.Native` | `Install-Package Windows-Gamepad-Filter.Native -Version 0.1.0` |
+| NuGet | `WindowsGamepadFilter.SDK` | `dotnet add package WindowsGamepadFilter.SDK --version 1.0.0` |
+| PyPI | `windows_gamepad_filter` | Commande prevue apres publication : `python -m pip install windows-gamepad-filter==1.0.0` |
+| Conda | `windows-gamepad-filter` | `conda install --override-channels -c https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel -c conda-forge windows-gamepad-filter` (canal TitanCSA) |
+| crates.io | `windows_gamepad_filter` | `cargo add windows-gamepad-filter@1.0.0` |
+| npm | `windows_gamepad_filter` | Commande prevue apres publication : `npm install windows-gamepad-filter@1.0.0` |
+| Maven Central | `io.github.titancsa:windows-gamepad-filter` | `io.github.titancsa:windows-gamepad-filter:1.0.0 (pom.xml / Gradle)` |
+| JitPack | `com.github.titanfyre:Windows-Gamepad-Filter` | `com.github.titanfyre:Windows-Gamepad-Filter:java-sdk-v1.0.0 (avec le depot JitPack)` |
+| Go Modules | `github.com/titanfyre/Windows-Gamepad-Filter/Windows-Gamepad-Filter-Go-modules` | `go get github.com/titanfyre/Windows-Gamepad-Filter/Windows-Gamepad-Filter-Go-modules@v1.0.0` |
+| pkg.go.dev | `github.com/titanfyre/Windows-Gamepad-Filter/Windows-Gamepad-Filter-Go-modules` | `Documentation : https://pkg.go.dev/github.com/titanfyre/Windows-Gamepad-Filter/Windows-Gamepad-Filter-Go-modules@v1.0.0` |
+| PowerShell Gallery | `windows_gamepad_filter` | `Install-Module WindowsGamepadFilter -RequiredVersion 1.0.0 -Scope CurrentUser` |
+| pub.dev | `windows_gamepad_filter` | `dart pub add windows_gamepad_filter:1.0.0` |
+| RubyGems | `windows_gamepad_filter` | `gem install windows-gamepad-filter -v 1.0.0` |
+| Packagist | `windows_gamepad_filter` | Commande prevue apres publication : `composer require titancsa/windows-gamepad-filter:1.0.0` |
 
 Pour vcpkg et Conan, configure d abord le registre TitanCSA avec [le guide complet](https://github.com/TitanCSA/sdk-packages/tree/main/projects/Windows-Gamepad-Filter/README.md). Le guide explique aussi Maven/Gradle, les prerequis et le chargement des DLL. Les pilotes/applications du produit sont installes separement. Les commandes marquees prevues ne sont pas encore disponibles.
 
