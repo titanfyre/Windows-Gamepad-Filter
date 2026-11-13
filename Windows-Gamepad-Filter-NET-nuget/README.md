@@ -1,6 +1,6 @@
 # Windows-Gamepad-Filter .NET SDK
 
-.NET 8+ Windows x64. Package ID: `WindowsGamepadFilter.SDK`; NuGet publication is on hold at the owner request. Local installation: `dotnet add package WindowsGamepadFilter.SDK --version 1.0.0 --source PATH_TO_LOCAL_PACKAGES`.
+.NET 8+ Windows x64. Package ID: `WindowsGamepadFilter.SDK`; Installation: `dotnet add package WindowsGamepadFilter.SDK --version 1.0.0`.
 
 ```csharp
 using TitanCSA.Products.WindowsGamepadFilter;
