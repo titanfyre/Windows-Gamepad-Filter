@@ -1,5 +1,0 @@
-!lib/native/
-!lib/native/WindowsGamepadFilterBridge.dll
-.dart_tool/
-pubspec.lock
-RELEASED.json
