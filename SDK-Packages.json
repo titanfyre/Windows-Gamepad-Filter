@@ -171,7 +171,7 @@
       "api_prefix": "windows_gamepad_filter_"
     },
     "JavaScript/npm": {
-      "status": "awaiting_browser_publication_authentication",
+      "status": "registry_publication_requires_action",
       "name": "windows-gamepad-filter",
       "version": "1.0.0",
       "directory": "Windows-Gamepad-Filter-JavaScript-npm",

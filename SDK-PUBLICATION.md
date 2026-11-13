@@ -11,7 +11,7 @@ Current source layout and registry coverage. A GitHub download is distinct from 
 | Python/pypi | built_fixture_and_production_verified | windows-gamepad-filter [Source](Windows-Gamepad-Filter-Python-pypi/) |
 | Python/conda-forge | custom_channel_install_verified_requires_conda_forge_review | [windows-gamepad-filter](https://raw.githubusercontent.com/TitanCSA/sdk-packages/089bc73095aa8eda89bacbe10d0b9e58394b0207/conda-channel) [Source](packaging/conda/) |
 | Rust/cargo | published_install_verified | [windows-gamepad-filter](https://crates.io/crates/windows-gamepad-filter) [Source](Windows-Gamepad-Filter-Rust-cargo/) |
-| JavaScript/npm | awaiting_browser_publication_authentication | [windows-gamepad-filter](https://www.npmjs.com/package/windows-gamepad-filter) [Source](Windows-Gamepad-Filter-JavaScript-npm/) |
+| JavaScript/npm | registry_publication_requires_action | [windows-gamepad-filter](https://www.npmjs.com/package/windows-gamepad-filter) [Source](Windows-Gamepad-Filter-JavaScript-npm/) |
 | Java/maven | published_install_verified | [windows-gamepad-filter](https://central.sonatype.com/artifact/io.github.titancsa/windows-gamepad-filter/1.0.0) [Source](Windows-Gamepad-Filter-Java-maven/) |
 | Java/jitpack | published_install_verified | [windows-gamepad-filter](https://jitpack.io/#titanfyre/Windows-Gamepad-Filter/java-sdk-v1.0.0) [Source](Windows-Gamepad-Filter-Java-maven/) |
 | Go/modules | published_install_verified | [windows-gamepad-filter](https://pkg.go.dev/github.com/titanfyre/Windows-Gamepad-Filter/Windows-Gamepad-Filter-Go-modules@v1.0.0) [Source](Windows-Gamepad-Filter-Go-modules/) |
